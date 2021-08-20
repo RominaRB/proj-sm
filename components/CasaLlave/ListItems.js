@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styled, { css } from 'styled-components';
 
 const MainContainer = styled.div`
@@ -31,20 +32,36 @@ export default function ListItems () {
     return (
         <MainContainer>
             <ListContainer>
-                <Item>
-                    Nuestros mod 1
-                </Item>
-                <Item>
-                    Nuestros mod 2
-                </Item>            
+                <Link href="/llaveenmano/modelo">
+                    <a>
+                        <Item>
+                            Nuestros mod 1
+                        </Item>
+                    </a>                
+                </Link>
+                <Link href="/llaveenmano/modelo">
+                    <a>
+                        <Item>
+                            Nuestros mod 2
+                        </Item>
+                    </a>                
+                </Link>
             </ListContainer>
             <ListContainer>
-                <Item>
-                    Personalizados 1
-                </Item>
-                <Item>
-                    Personalizados 2
-                </Item>            
+                <Link href="/llaveenmano/modelo">
+                    <a>
+                        <Item>
+                            Personalizados 1
+                        </Item>
+                    </a>                
+                </Link>
+                <Link href="/llaveenmano/modelo">
+                    <a>
+                        <Item>
+                            Personalizados 2
+                        </Item>
+                    </a>                
+                </Link>                
             </ListContainer>        
         </MainContainer>
     );
