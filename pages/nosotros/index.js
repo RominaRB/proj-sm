@@ -1,9 +1,9 @@
 import AppLayout from "../../components/AppLayout"
 
-export default function Contacto() {
+export default function Nosotros() {
   return (
     <AppLayout>
-      Sector de contacto
+      Sector Nosotros
     </AppLayout>
   )
 }

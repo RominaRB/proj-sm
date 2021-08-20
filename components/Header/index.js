@@ -15,12 +15,22 @@ const Nav = styled.div`
         width: 100px;
     `}
 `;
-Nav.displayName = 'Nav';
 
 const NavItem = styled.div`
     color: black;
+    margin: 10px;
 `;
-NavItem.displayName = 'NavItem';
+
+const Contacto = styled.div`
+    display: flex;
+    cursor: pointer;
+    color: black;
+    margin: 10px;
+`;
+
+const onContactClicked = () => {
+    window.scrollTo({ top: 9999, behavior: 'smooth' });
+};
 
 export default function Header() {
     return (
@@ -37,9 +47,29 @@ export default function Header() {
                 </Link>
             </NavItem>
             <NavItem>
-                <Link href="/contacto">
-                    <a>CONTACTO</a>
+                <Link href="/nosotros">
+                    <a>NOSOTROS</a>
                 </Link>
+            </NavItem>
+            <NavItem>
+                <Link href="/empresas">
+                    <a>EMPRESAS</a>
+                </Link>
+            </NavItem>
+            <NavItem>
+                <Link href="/llaveenmano">
+                    <a>CASA LLAVE EN MANO</a>
+                </Link>
+            </NavItem>
+            <NavItem>
+                <Link href="/obras">
+                    <a>OBRAS</a>
+                </Link>
+            </NavItem>            
+            <NavItem>
+                <Contacto onClick={onContactClicked}>
+                    CONTACTO
+                </Contacto>
             </NavItem>
         </Nav>
       </>  
