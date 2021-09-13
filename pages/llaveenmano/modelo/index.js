@@ -10,7 +10,7 @@ export default function Modelo() {
   return (
     <AppLayout>
       <ContainerModelo>
-        Detalle del Modelo/Item: X
+        Detalle del Modelo/Item: Xyyyyyyy
       </ContainerModelo>
     </AppLayout>
   )
